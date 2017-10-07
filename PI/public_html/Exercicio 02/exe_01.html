@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrador de Data</title>
+    <script type="text/javascript">
+        function mostrarDataEHora() {
+            var date = new Date();
+            document.write("Data e hora completa: " + date + "<br>");
+            document.write("Dia: " + date.getDate() + "<br>");
+            document.write("Mês: " + date.getMonth() + "<br>");
+            document.write("Ano: " + date.getFullYear() + "<br>");
+            document.write("Dia da semana: " + date.getDay() + "<br>");
+            document.write("Hora e minuto: " + date.getHours() + "h" + date.getMinutes() + "m "+ "<br>");
+        }
+    </script>
+</head>
+<body onload="mostrarDataEHora()">
+
+</body>
+</html>

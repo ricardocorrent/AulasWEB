@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contato</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo-02.css"/>
+    </head>
+    <body>
+        <form id="form-contato" action="mailto:seunome@seuprovedor.com" method="post">
+            <table id="table-contato">
+                <thead>
+                    <tr><td class="descricao"></td><td>Rua José Rodrigues dos Santos, S/N - Bairro Nobre<br>Brumado - BA - Brasil<br>Telefone: (77) 3441-2405</td></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="descricao">Nome</td><td><input class="campo-texto" type="text" name="nome" maxlength="75" size="75"/></td></tr>
+                    <tr><td class="descricao">E-mail</td><td><input class="campo-texto" type="text" name="email" maxlength="75" size="75"/></td></tr>
+                    <tr><td class="descricao">Assunto</td><td><input class="campo-texto" type="text" name="assunto" maxlength="75" size="75"/></td></tr>
+                    <tr><td class="descricao">Mensagem</td><td><textarea class="txt-mensagem" cols="65" rows="5" ></textarea></td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td class="descricao"></td><td><input type="submit" value="Enviar"/></td></tr>
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alterar Imagem</title>
+    <style type="text/css" rel="stylesheet">
+        div#divFoto{
+            width: 200px;
+            margin: auto;
+            margin-right: auto;
+        }
+        img#foto{
+            width: 200px;
+        }
+    </style>
+    <script type="text/javascript">
+        function trocarImagem(img) {
+            document.getElementById("foto").src = img;
+        }
+    </script>
+</head>
+<body>
+<div id="divFoto"><img src="img02.jpg" id="foto" onmouseover="trocarImagem('img01.jpg')" onmouseout="trocarImagem('img02.jpg')"></div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+/* FORMULÁRIO */
+fieldset#contorno {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+/* CAMPOS DE TEXTO */
+
+input#iNome {
+    width: 100%;
+}
+
+input#iEmail {
+    width: 100%;
+}
+
+input#iDataNascimento {
+    width: 150px;
+}
+
+input#iLogradouro {
+    width: 100%;
+}
+
+input#iNumero {
+    width: 100%;
+}
+
+input#iComplemento {
+    width: 100%;
+}
+
+input#iBairro {
+    width: 250px;
+}
+
+input#iCidade {
+    width: 200px;
+}
+
+input#iEstado {
+    width: 100px;
+}
+
+input#iCep {
+    width: 122px;
+}
+
+/* --FIM DOS CAMPOS DE TEXTO-- */
+
+/* ETIQUETAS DOS CAMPOS */
+div.campos p.etiqueta {
+    margin-bottom: 0px;
+}
+
+/* DIV COM SEPARAÇÃO DAS LINHAS */
+div.containerCliente .linha {
+    display: inline-block;
+}
+
+div.linha#esquerda {
+    width: 49%;
+    float: left;
+}
+
+div.linha#direita {
+    width: 49%;
+    float: right;
+}
+
+div.containerEndereco1 .linha {
+    display: inline-block;
+}
+div.linha#log{
+    width: 59%;
+    float: left;
+}
+div.linha#num{
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.linha#com{
+    width: 24%;
+    float: right;
+}
+div.containerEndereco2 .linha {
+    display: inline-block;
+}
+
+/* BOTÕES */
+div.botoes {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+div.botoes .botao {
+    width: 120px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ficha Cadastral</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo-01.css">
+    </head>
+    <body>
+        <form id="form-ficha">
+            <h2>Ficha Cadastral</h2>
+            <table id="table-ficha">
+                <tbody id="table-corpo">
+                    <tr><td class="descricao">Nome:</td>    <td colspan="3"><input class="ne" type="text" name="nome" id="nome" maxlength="55"></td></tr>
+                    <tr><td class="descricao">RG:</td>      <td><input class="rcd" type="text" name="rg" id="rg" maxlength="13"></td>
+                        <td class="descricao">C.P.F.:</td>  <td><input class="rcd" type="text" name="cpf" maxlength="13"></td></tr>
+                    <tr><td class="descricao">Endereço:</td><td colspan="3"><input class="ne" type="text" name="endereco" id="endereco" maxlength="55"> </td></tr>
+                    <tr><td class="descricao">Sexo:</td>
+                        <td><select>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                            </select></td>
+                        <td class="descricao">Data Nascimento:</td><td><input class="rcd" type="text" name="data-nascimento" maxlength="13"></td></tr>
+                    <tr><td class="descricao">Situação Civil</td>
+                        <td><input type="radio" name="civil" value="Solteiro"> Solteiro(a)</td>
+                        <td><input type="radio" name="civil" value="Casado"> Casado(a)</td>
+                        <td><input type="radio" name="civil" value="Viúvo"> Viúvo(a)</td></tr>
+                </tbody>
+                <tr><td id="botao-limpar" colspan="4"><input type="reset" value="Limpar"> </td></tr>
+            </table>
+        </form>
+    </body>
+</html>

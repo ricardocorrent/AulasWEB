@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" type="text/css" href="style02.css">
+    <script type="text/javascript" src="comp02.js"></script>
+</head>
+
+<body onload="estadoInicial();">
+
+<div id="contend">
+
+    <form name="formCadastro" id="iFormCadastro">
+        <fieldset id="contorno">
+            <legend>Cadastro de Cliente</legend>
+            <div class="campos">
+
+                <div class="linha">
+                    <p class="etiqueta" hidden>ID</p></div>
+                <div class="containerCliente">
+                    <div class="linha" id="esquerda"><p class="etiqueta">Nome:</p>            <input class="campoTexto" type="text" id="iNome" value=""></div>
+                    <div class="linha" id="direita"><p class="etiqueta">E-mail:</p>          <input class="campoTexto" type="text" id="iEmail" value=""></div>
+                </div>
+                <div class="linha"><p class="etiqueta">Data Nascimento:</p> <input class="campoData" type="date" id="iDataNascimento" value=""></div>
+
+                <div class="containerEndereco1">
+                    <div class="linha" id="log"><p class="etiqueta">Logradouro:</p>      <input class="campoTexto" type="text" id="iLogradouro" value=""></div>
+                    <div class="linha" id="num"><p class="etiqueta">Número:</p>          <input class="campoTexto" type="text" id="iNumero" value=""></div>
+                    <div class="linha" id="com"><p class="etiqueta">Complemento:</p>     <input class="campoTexto" type="text" id="iComplemento" value=""></div>
+                </div>
+
+                <div class="containerEndereco2">
+                    <div class="linha"><p class="etiqueta">Bairro:</p>          <input class="campoTexto" type="text" id="iBairro" value=""></div>
+                    <div class="linha"><p class="etiqueta">Cidade:</p>          <input class="campoTexto" type="text" id="iCidade" value=""></div>
+                    <div class="linha"><p class="etiqueta">Estado:</p>          <input class="campoTexto" type="text" id="iEstado" value=""></div>
+                    <div class="linha"><p class="etiqueta">Cep:</p>             <input class="campoTexto" type="text" id="iCep" value=""></div>
+                </div>
+
+            </div>
+
+            <div class="botoes">
+                <input class="botao" name="incluir" id="iIncluir" type="button" value="Incluir" onclick="clickIncluir()">
+                <input class="botao" name="alterar" id="iAlterar" type="button" value="Alterar" onclick="clickAlterar()">
+                <input class="botao" name="excluir" id="iExcluir" type="button" value="Excluir" onclick="clickExcluir()">
+                <input class="botao" name="gravar" id="iGravar" type="button" value="Gravar">
+                <input class="botao" name="cancelar" id="iCancelar" type="button" value="Cancelar" onclick="clickCancelar()">
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>
+</body>
+</html>

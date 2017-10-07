@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saudações</title>
+    <script type="text/javascript">
+        function saudacoes() {
+            var horario = new Date();
+            if(horario.getHours() < 6){
+                document.getElementById("foto").src = "exe04_04.jpg";
+            }else if(horario.getHours() < 12){
+                document.getElementById("foto").src = "exe04_01.jpg";
+            }else if(horario.getHours() < 18){
+                document.getElementById("foto").src = "exe04_02.jpg";
+            }else{
+                document.getElementById("foto").src = "exe04_03.jpg";
+            }
+        }
+    </script>
+</head>
+<body onload="saudacoes()">
+<div id="divImagem"><img id="foto" src="" ></div>
+</body>
+</html>
