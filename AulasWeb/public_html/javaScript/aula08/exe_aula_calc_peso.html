@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    <script type="text/javascript">
+        function calcularPesoIdeal() {
+            var sexo = document.calcular_peso.sexo.value;
+            var altura = document.calcular_peso.altura.value;
+            var peso = document.calcular_peso.peso.value;
+            var imc = eval(peso / (altura * altura));
+            //imc = Math.fround(imc,2);
+            imc = imc.toFixed(2);
+            if(sexo === "Masculino"){
+                if(imc < 20.7){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Abaixo do peso";
+                }else if(imc < 26.5){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Peso normal";
+                }else if(imc < 27.9){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Pouco acima do peso";
+                }else if(imc < 31.2){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Acima do peso";
+                }else{
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Obesidade Grau I";
+                }
+            }
+            if(sexo === "Feminino"){
+                if(imc < 19.1){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Abaixo do peso";
+                }else if(imc < 25.9){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Peso normal";
+                }else if(imc < 27.4){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Pouco acima do peso";
+                }else if(imc < 32.4){
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Acima do peso";
+                }else{
+                    document.calcular_peso.resultado.value = "IMC = " + imc + " Obesidade Grau I";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="calcular_peso">
+        <input type="radio" name="sexo" value="Masculino" id="Masculino"><label for="Masculino">Masculino</label><br>
+        <input type="radio" name="sexo" value="Feminino" id="Feminino"><label for="Feminino">Feminino</label><br>
+        <p>Altura: <input type="text" name="altura" value="0" size="10"></p>
+        <p>Peso: <input type="text" name="peso" value="0" size="10"></p>
+        <p><input type="button" value="Calcular" onclick="calcularPesoIdeal()"></p>
+        <p><input type="text" name="resultado" size="30" disabled></p>
+        <p><input type="reset" name="limpar" value="Limpar"></p>
+    </form>
+</body>
+</html>

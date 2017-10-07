@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        function copiar(formulario) {
+            var teste = document.formulario.entrada.value;
+            document.formulario.saida.value = teste;
+        }
+    </script>
+</head>
+<body>
+    <form name="formulario">
+        <input type="text" name="entrada" value=""> Caixa de texto de entrada<br />
+        <input type="button" name="botao" value="Copiar" onClick="copiar(formulario)"><BR>
+        <input type="text" name="saida" value=""> Caixa de texto de saída
+    </form>
+</body>
+</html>

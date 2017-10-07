@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="comportamentos.js"></script>
+    </head>
+    <body>
+        <div><a href="http://www.w3schools.com" onmouseover="alert('Um evento onMouseOver ocorreu!');"/>Site da w3</a></div>
+    <div><input type="button" value="View message" onclick="message()" /></div>
+    
+    <!--Usando throw'-->
+    <script type="text/javascript">
+        var x = prompt("Informe um número entre 0 e 10:", "");
+        try {
+            if (x > 10)
+                throw "Erro1";
+            else if (x < 0)
+                throw "Erro2";
+        } catch (err) {
+            if (err == "Erro1")
+                alert("Erro! Valor alto demais");
+            if (err == "Erro2")
+                alert("Erro! Valor baixo demais");
+        }
+    </script>
+
+    <div>
+        <form name="form1">
+            <input type="text" name="texto" value="">
+            <input type="button" name="botao" value=" Exibir Alerta" onClick="controle(form1)">
+        </form>
+    </div>
+    
+</body>
+</html>

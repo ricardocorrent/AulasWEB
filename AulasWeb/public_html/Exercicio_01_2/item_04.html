@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pet Shop de Aquários</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Informações do Aquário:</legend>
+                    Ph do Aquário:<br>
+                    <input type="radio" name="ph" value="Ácido">Ácido
+                    <input type="radio" name="ph" value="Alcalino">Alcalino                                
+                    <fieldset>
+                        <legend>Peixes:</legend>
+                        Quantidade:<br>
+                        <input type="text" name="qtd"><br>
+                        Espécie:<br>
+                        <select>
+                            <option value="espada">Espada</option>
+                            <option value="molinesia">Molinésia</option>
+                            <option value="plati">Plati</option>
+                        </select>
+                    </fieldset>
+                    Outros:<br>
+                    <input type="checkbox" name="outros" value="Pedras">Pedras<br>
+                    <input type="checkbox" name="outros" value="Plantas">Plantas
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>

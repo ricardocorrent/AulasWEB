@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+    <script type="text/javascript">
+        function verificarIdade() {
+            var date = new Date();
+            var nome = prompt("Informe seu nome", "");
+            var anoNascimento = prompt("Informe seu ano de nascimento", "");
+            if ((date.getFullYear() - anoNascimento) >= 18) {
+                alert(nome + "!! Esse conteúdo é permitido para você");
+            } else {
+                alert(nome + " seu criancinha de bosta!! Visite www.disney.com").onclose;
+            }
+        }
+    </script>
+</head>
+<body onload="verificarIdade();">
+
+</body>
+</html>

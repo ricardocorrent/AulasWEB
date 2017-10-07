@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/08/2017, 19:45:54
+    Author     : rcorrent
+*/
+
+body{
+    background: linear-gradient(blue, indigo, indigo, indigo, indigo);
+}
+body p{
+    color: white;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+body ul{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+}
+h1{
+    color: bisque;
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    box-shadow: 1px 1px 4px black;
+    text-transform: uppercase;
+}
+h2{
+    color: lightyellow;    
+    background-color: rgba(0,0,0,0.2);
+    padding-left: 15px;
+}
+h3{
+    color: gainsboro;
+    background-color: rgba(0,0,0,0.1);
+    padding-left: 25px;
+}
+h4{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    padding-left: 35px;
+}
+h5{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    padding-left: 40px;
+}
+h6{
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.1);
+    padding-left: 45px;
+}
+a{    
+    font-size: 15px;
+    color: yellow;
+}
+a:hover{
+    font-weight: bolder;
+}

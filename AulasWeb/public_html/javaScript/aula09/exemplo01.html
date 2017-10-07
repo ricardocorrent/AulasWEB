@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de cores</title>
+    <script type="text/javascript">
+        function mudaCor(colorin) {
+            document.bgColor = colorin;
+        }
+
+        function mudaTitle(title) {
+            document.title = title;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <input type="button" value="Vermelho" onclick="mudaCor('red')">
+    <input type="button" value="Verde" onclick="mudaCor('green')">
+    <input type="button" value="Azul" onclick="mudaCor('blue')">
+</form>
+<form>
+    <input type="button" value="Mudar" onclick="mudaTitle('Mudou')">
+    <input type="button" value="Mudar 2" onclick="mudaTitle('Mudou de novo')">
+    <input type="button" value="Mudar 3" onclick="mudaTitle('Mudou pela última vez')">
+</form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+a:hover {
+	text-transform: uppercase;
+	font-weight:bold;
+	color:blue;
+	background-color:yellow;
+}
+
+a:visited {
+	color: yellow;
+}
+
+a:active {
+	background-color: blue;
+}
+
+a:link {
+	color: black;
+}
+
+p:first-child {
+	background-color: black;
+} 
+
+p:first-line {
+	color:#fff900;
+	font-variant:small-caps;
+}
+
+p:first-letter {
+	color:#ff0000;
+	font-size:xx-large;
+}
+
+#exbefaft:before {
+	content:url(logo.jpg);
+}
+
+#exbefaft:after   {
+    content:url(logo.jpg);
+}
+
+#paragr1 { 
+	text-indent: 50px;
+	font-family: monotype;
+    font-variant: small-caps;
+    background-color: aqua;
+} 
+
+p {
+	color:yellow;
+	background-color: teal;
+} 
+
+input:focus {
+	background-color:yellow;
+}
+
+li.classe1 { 
+	color: #FFBB00; 
+} 
+
+li.classe2 { 
+	color: #800000; 
+} 
+
+li {
+	color: magenta;
+}

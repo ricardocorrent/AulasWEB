@@ -1,0 +1,91 @@
+#menuver {
+	width: 11em;
+	padding: 0; 
+	margin: 0;
+	font: 12px Verdana, sans-serif;
+	background: #000; 
+	border-top: 3px solid red; 
+	border-bottom: 3px solid red; 
+}
+#menuver li {
+	list-style: none;
+	margin: 0.5em 0 0.5em 0.5em; 
+}
+#menuver li a {
+	margin:0; 
+	padding:0;
+	text-decoration:none;
+	color: #fff;
+}
+ #menuver li a:visited {
+	color: #fff;
+}
+#menuver li a:hover { 
+	background: #fff;
+	color: #000; 
+}
+#menuver li a:active { 
+	background: #ccc;
+	color: #000; 
+}
+#menubv {
+	width: 12em;
+	padding: 0;
+	margin: 0;
+	font: 14px Verdana, sans-serif;
+}
+#menubv ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menubv li {
+	border-bottom: 1px solid #f00;
+	margin: 0;
+}
+#menubv li a {
+	display: block;
+	padding: 5px 5px 5px 0.5em;
+	font-weight:bold;
+	border-left: 10px solid #ffc0cb;
+	border-right: 10px solid #fff5ee;
+	background-color: #ffe4e1;
+	color: #808000;
+	text-decoration: none;
+}
+#menubv li a:hover {
+	border-left: 10px solid #fcc;
+	border-right: 10px solid #fff;
+	background-color: #fff0f5;
+	color: #ccc;
+}
+
+#menuhor {
+	border:none;
+	margin: 0;
+	font: 9px Arial, sans-serif;
+}
+#menuhor li {
+	list-style: none; 
+	margin: 0;
+	display: inline;
+}
+#menuhor li a {
+	height:1px; /* IE5.0 bug */
+	padding: 3px 1px; 
+	margin:0;
+	border: 1px solid #f00; 
+	background: #999;
+	text-decoration: none;
+}
+#menuhor li a:link {
+	color: #fff;
+}
+#menuhor li a:visited {
+	color: #fff;
+}
+#menuhor li a:hover {
+	background: #ccc;
+	color: #000; 
+	border-color: #000;
+}

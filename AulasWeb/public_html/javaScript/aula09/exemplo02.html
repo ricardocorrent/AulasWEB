@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submeter Formulário</title>
+    <script type="text/javascript">
+        function validaSubmete() {
+            if (document.meuFormulario.campo1.value == "") {
+                alert("Deve preencher o formulário");
+            } else {
+                document.meuFormulario.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="meuFormulario" action="mailto:endereco@servidor.com">
+    <input type="text" name="campo1" value="" size="12" required>
+    <input type="button" value="Enviar" onclick="validaSubmete()">
+</form>
+</body>
+</html>

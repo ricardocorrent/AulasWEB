@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cookies</title>
+    <script type="text/javascript">
+        function criarCookie() {
+            var nome = prompt("Qual é o seu nome?", "");
+            var meuCookie = "nome=" + escape(nome);
+            document.cookie = meuCookie;
+            alert("Obrigado!");
+        }
+
+        function lerCookie() {
+            var o_cookie = document.cookie;
+            var quebra_de_linha = o_cookie.split("=");
+            var o_nome = quebra_de_linha[1];
+            var o_nome = unescape(o_nome);
+            alert("Seu nome é: " + o_nome);
+        }
+
+        function setarCookie() {
+            var a_data = new Date();
+            var o_cookie = "data=" + escape(a_data);
+            document.cookie = o_cookie;
+        }
+
+        function lerAcessoCookie() {
+            if (document.cookie) { // se existe um cookie para o site
+                var o_cookie = document.cookie;
+                var o_cookie_array = o_cookie.split("=");
+                var a_data = unescape(o_cookie_array[1]);
+                document.write("A ultima vez que você visitou foi em: " + a_data);
+            }
+        }
+
+        function getCookie(c_name) {
+            if (document.cookie.length > 0) {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1) {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+    </script>
+</head>
+<body onload="setarCookie()">
+<div><input type="button" name="CreateCookie" value="Criar Cookie" onclick="criarCookie()"></div>
+<div><input type="button" name="ReadCookie" value="Ler Cookie" onclick="lerCookie()"></div>
+<!--<div><input type="button" name="AlterCookie" value="Alterar Cookie" onclick="setarCookie()"></div>-->
+<div><input type="button" name="ReadDateCookie" value="Ler a Data Cookie" onclick="lerAcessoCookie()"></div>
+</body>
+</html>

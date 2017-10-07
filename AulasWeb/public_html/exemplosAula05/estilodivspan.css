@@ -1,0 +1,95 @@
+p.primeiro:first-letter {
+	color:#ff0000; 
+	font-size:xx-large;
+	text-transform:uppercase;
+}
+
+
+#titulo1 { 
+	color: #0000FF; 
+	font-family:arial, sans-serif; 
+	font-size: 30px; 
+} 
+
+span.titulo{
+	color: #0066FF; 
+	font-family:arial, sans-serif; 
+	font-size: 30px; 
+}
+
+#intro {
+	background-color:gray;
+}
+
+#intro p{
+	text-align:justify;
+	text-indent: 50px;
+}
+
+#sec1 {
+	background-color:aqua;
+}
+
+#sec1 p {
+	text-align:justify;
+	text-indent: 50px
+}
+
+#sec2 {
+	background-color:lime;
+}
+
+#sec2 p {
+	text-align:justify;
+	text-indent: 50px
+}
+
+#contato{
+	background-color:navy;
+	text-align:Center;
+ }
+
+h1 {
+	background: yellow;
+	padding: 20px 20px 20px 80px;
+	border-width: thick;
+	border-style: dotted;
+	border-color: gold;
+}
+
+h2 {
+	background: orange;
+	padding-left:120px;
+	border-width: 20px;
+	border-style: outset;
+	border-color: red;
+}
+
+
+p {
+	border-width: 1px;
+	border-style: dashed;
+	border-color: blue;
+}
+
+div.caixa  {
+	height: 400px;
+	width: 200px;	
+	border: 1px solid black;	
+	background: orange;	
+}
+
+img.normal {
+	width:auto;
+	height:auto;
+}
+
+img.big {
+	height:50%;
+	width: 50%;
+}
+
+img.small {
+	height:10%;
+	width:10%;
+ }

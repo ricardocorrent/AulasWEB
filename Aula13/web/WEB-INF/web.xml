@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Execute</servlet-name>
+        <servlet-class>Execute</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Execute</servlet-name>
+        <url-pattern>/Execute</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>PrimitiveServlet</display-name>
+        <servlet-name>PrimitiveServlet</servlet-name>
+        <servlet-class>PrimitiveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PrimitiveServlet</servlet-name>
+        <url-pattern>/PrimitiveServelet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>ConfigDemoServlet</display-name>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <servlet-class>ConfigDemoServlet</servlet-class>
+        <init-param>
+            <param-name>adminEmail</param-name>
+            <param-value>meuuser@email.com.br</param-value>
+        </init-param>
+        <init-param>
+            <param-name>adminContact</param-name>
+            <param-value>+55(44)99900.0000</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfigDemoServlet</servlet-name>
+        <url-pattern>/ConfigDemoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>ReserveConfigServlet</display-name>
+        <servlet-name>ReserveConfigServlet</servlet-name>
+        <servlet-class>ReserveConfigServlet</servlet-class>        
+        <init-param>
+            <param-name>host</param-name>
+            <param-value>localhost</param-value>
+        </init-param>
+        <init-param>
+            <param-name>porta</param-name>
+            <param-value>3306</param-value>
+        </init-param>
+        <init-param>
+            <param-name>database</param-name>
+            <param-value>aula13</param-value>
+        </init-param>
+        <init-param>
+            <param-name>user</param-name>
+            <param-value>root</param-value>
+        </init-param>
+        <init-param>
+            <param-name>pass</param-name>
+            <param-value>root</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReserveConfigServlet</servlet-name>
+        <url-pattern>/ReserveConfigServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>ContextServlet</display-name>
+        <servlet-name>ContextServlet</servlet-name>
+        <servlet-class>ContextServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContextServlet</servlet-name>
+        <url-pattern>/ContextServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>ContextDemoServlet</display-name>
+        <servlet-name>ContextDemoServlet</servlet-name>
+        <servlet-class>ContextDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContextDemoServlet</servlet-name>
+        <url-pattern>/ContextDemoServlet</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+        <display-name>AttributeSetterServlet</display-name>
+        <servlet-name>AttributeSetterServlet</servlet-name>
+        <servlet-class>AttributeSetterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AttributeSetterServlet</servlet-name>
+        <url-pattern>/AttributeSetterServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>DisplayAttributeServlet</display-name>
+        <servlet-name>DisplayAttributeServlet</servlet-name>
+        <servlet-class>DisplayAttributeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayAttributeServlet</servlet-name>
+        <url-pattern>/DisplayAttributeServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>RequestDemoServlet</display-name>
+        <servlet-name>RequestDemoServlet</servlet-name>
+        <servlet-class>RequestDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestDemoServlet</servlet-name>
+        <url-pattern>/RequestDemoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>ResponseDemoServlet</display-name>
+        <servlet-name>ResponseDemoServlet</servlet-name>
+        <servlet-class>ResponseDemoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResponseDemoServlet</servlet-name>
+        <url-pattern>/ResponseDemoServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <display-name>SimpleServlet</display-name>
+        <servlet-name>SimpleServlet</servlet-name>
+        <servlet-class>SimpleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SimpleServlet</servlet-name>
+        <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <display-name>SingleThreadedServlet</display-name>
+        <servlet-name>SingleThreadedServlet</servlet-name>
+        <servlet-class>SingleThreadedServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SingleThreadedServlet</servlet-name>
+        <url-pattern>/SingleThreadedServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

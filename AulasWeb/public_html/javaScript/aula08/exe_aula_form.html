@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript">
+        function escolhaprop(form3) {
+            if (form3.escolha[0].checked){
+                alert("Escolheu a opção " + form3.escolha[0].value);
+            }
+            if (form3.escolha[1].checked){
+                alert("Escolheu a opção " + form3.escolha[1].value);
+            }
+            if (form3.escolha[2].checked){
+                alert("Escolheu a opção " + form3.escolha[2].value);
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="form3">
+    <input type="radio" name="escolha" value="1">Escolha número 1<BR>
+    <input type="radio" name="escolha" value="2">Escolha número 2<BR>
+    <input type="radio" name="escolha" value="3">Escolha número 3<BR>
+    <input type="button" name="but" value="Escolha uma Opção e clique" onClick="escolhaprop(form3)">
+</form>
+</body>
+</html>

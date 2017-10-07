@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div align="center">
+            <h1>Escola Virtual</h1>
+            <h3>Formulário de Pré-Matrícula</h3>
+        </div>
+        <div>
+            <form action="mailto:nome@email.com" method="post">
+                <fieldset>
+                    <fieldset>
+                        <table>
+                            <tr align="left"><th>Dados Pessoais:</th></tr>
+                            <tr>
+                                <td align="right">
+                                    Nome do Aluno:<br>
+                                </td>
+                                <td>
+                                    <input type="text" name="nome" maxlength="40" size="40"><br>
+                                </td>
+                            <tr>
+                                <td align="right">
+                                    Nascimento (dd/mm/aaaa):<br>
+                                </td>
+                                <td>
+                                    <input type="text" name="dia" size="2">/
+                                    <input type="text" name="mes" size="2">/
+                                    <input type="text" name="ano" size="4"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    Nome da Mãe:
+                                </td>
+                                <td>
+                                    <input type="text" name="mae" maxlength="40" size="40">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    Nome do Pai:<br>
+                                </td>
+                                <td>
+                                    <input type="text" name="pai" maxlength="40" size="40">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    Telefone:<br>
+                                </td>
+                                <td>
+                                    DDD(<input type="text" name="ddd" maxlength="2" size="2">)
+                                    Tel:(<input type="text" name="tel" maxlength="8" size="8">)
+                                </td>
+                                <td>
+                                    Ramal:<input type="text" name="ramal" maxlength="4" size="4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    E-Mail:
+                                </td>
+                                <td>
+                                    <input type="text" name="email" maxlength="40" size="40">
+                                </td>                                
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset>
+                        <table>
+                            <tr align="left"><th>Dados Pessoais:</th></tr>
+                            <tr>
+                                <td>Série:</td>
+                                <td>Turno:</td>
+                                <td>Atividade Extracurriculares:</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option value="pre">pré-escola</option>
+                                        <option value="1s1g">1ª Série 1º Grau</option>
+                                        <option value="2s1g">2ª Série 1º Grau</option>
+                                        <option value="3s1g">3ª Série 1º Grau</option>
+                                        <option value="4s1g">4ª Série 1º Grau</option>
+                                        <option value="5s1g">5ª Série 1º Grau</option>
+                                        <option value="6s1g">6ª Série 1º Grau</option>
+                                        <option value="7s1g">7ª Série 1º Grau</option>
+                                        <option value="8s1g">8ª Série 1º Grau</option>
+                                        <option value="1s2g">1ª Série 2º Grau</option>
+                                        <option value="2s2g">2ª Série 2º Grau</option>
+                                        <option value="3s2g">3ª Série 2º Grau</option>
+                                        
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="radio" name="turno" value="manha">Manhã<br>
+                                    <input type="radio" name="turno" value="tarde">Tarde
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="ae" value="infor">Informática<br>
+                                    <input type="checkbox" name="ae" value="mus">Música<br>
+                                    <input type="checkbox" name="ae" value="bal">Balet<br>
+                                    <input type="checkbox" name="ae" value="pin">Pintura<br>
+                                    <input type="checkbox" name="ae" value="ju">Judô<br>
+                                    <input type="checkbox" name="ae" value="fut">Futebol
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </fieldset>
+                <div align="center">
+                    <input type="submit" name="enf" value="Enviar Formulário">
+                    <input type="reset" name="limp" value="Limpar Campos">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

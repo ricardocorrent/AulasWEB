@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 02</title>
+    <script type="text/javascript">
+        function exibirHora() {
+            var date = new Date();
+            var hora = date.getHours() + "h" + date.getMinutes() + "m" + date.getSeconds() + "s";
+            alert(hora);
+        }
+    </script>
+</head>
+<body>
+    <div><input type="button" onclick="exibirHora()" value="Exibir HORA" /></div>
+</body>
+</html>

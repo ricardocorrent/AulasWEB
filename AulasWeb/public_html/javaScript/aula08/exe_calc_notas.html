@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Notas - Faculdade Integrado</title>
+    <link type="text/css" rel="stylesheet" href="exe_calculo.css">
+
+    <script type="text/javascript" src="exe_calc_notas_js.js"></script>
+
+</head>
+<body>
+<div class="pagina">
+    <div class="cabecalho"><h1><img src="índice.png"> Cálculo de Notas</h1></div>
+    <div class="linhaEmBaixo"><hr></div>
+    <form id="calculadora" name="calcularNotas">
+        <fieldset class="contornoDoFormulario">
+            <legend>Informe suas notas para realizar o cálculo</legend>
+            <div class="linhaEmBaixo"><hr></div>
+            <div class="linha">
+                <div class="ce"><p>AV1 1º Bimestre</p><input class="caixaNota" type="text" name="nAv11b" id="iAv11b" placeholder="10.00" onblur="av11()"></div>
+                <div class="cd"><p>Nota do portal</p><input class="caixaPortal" type="text" name="nAv11bNp" id="iAv11bNp" placeholder="2.50" disabled></div>
+            </div>
+
+            <div class="linha">
+                <div class="ce"><p>AV1 2º Bimestre</p><input class="caixaNota" type="text" name="nAv12b" id="iAv12b" placeholder="10.00" onblur="av12()"></div>
+                <div class="cd"><p>Nota do portal</p><input class="caixaPortal" type="text" name="nAv12bNp" id="iAv12bNp" placeholder="2.50" disabled></div>
+            </div>
+
+            <div class="linha">
+                <div class="ce"><p>AV2</p><input class="caixaNota" type="text" name="nAv2" id="iAv2" placeholder="10.00" onblur="av2()"></div>
+                <div class="cd"><p>Nota do portal</p><input class="caixaPortal" type="text" name="nAv2Np" id="iAv2Np" placeholder="3.00" disabled></div>
+            </div>
+
+            <div class="linha">
+                <div class="ce"><p>AV3</p><input class="caixaNota" type="text" name="nAv3" id="iAv3" placeholder="10.00" onblur="av3()"></div>
+                <div class="cd"><p>Nota do portal</p><input class="caixaPortal" type="text" name="nAv3Np" id="iAv3Np" placeholder="2.00" disabled></div>
+            </div>
+            <!-- <div class="divResultado"><input class="caixaResultado" id="mostrarResultado" type="text" name="resultado" size="30" value="" disabled></div> -->
+            <div class="divResultado"><div class="caixaResultado" id="mostrarResultado" name="resultado"></div></div>
+            <div class="linhaEmBaixo"><hr></div>
+
+            <div class="botoes">
+                <input id="botaoLimpar" class="botaoPadrao" type="reset" name="limpar" value="Limpar">
+                <input id="botaoCalcular" class="botaoPadrao" type="button" name="calcular" value="Calcular" onclick="atualizarResultado()">
+            </div>
+        </fieldset>
+
+    </form>
+</div>
+</body>
+</html>

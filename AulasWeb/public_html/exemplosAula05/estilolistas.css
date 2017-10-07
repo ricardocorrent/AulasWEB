@@ -1,0 +1,10 @@
+.circle {list-style-type:circle}
+.square {list-style-type:square}
+.upper-roman {list-style-type:upper-roman}
+.lower-alpha {list-style-type:lower-alpha}
+.inside {list-style-position:inside}
+.outside {list-style-position:outside}
+.imagem {
+  list-style-image:url('arrow.gif');
+  list-style-type:square;
+}

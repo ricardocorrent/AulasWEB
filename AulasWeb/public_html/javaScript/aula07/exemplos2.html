@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos da Aula</title>
+    <script type="text/javascript" src="javaExemplo.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    for (var i = 1; i <= 6; i++) {
+        document.write("<h" + i + ">This is header " + i);
+        document.write("</h" + i + ">");
+    }
+</script>
+<script type="text/javascript">
+    for (i = 0; i <= 10; i++) {
+        if (i == 3) {
+            break;
+        }
+        document.write("O número é " + i);
+        document.write("<br />");
+    }
+    i = 0;
+    while (i <= 1) {
+        document.write("<br>")
+        i++;
+    }
+</script>
+<script type="text/javascript">
+    for (var i = 0; i <= 10; i++) {
+        if (i == 3) {
+            continue;
+        }
+        document.write("Numero " + i);
+        document.write("<br />");
+    }
+    document.write("<br/>");
+</script>
+<script type="text/javascript">
+    var i;
+    var mycars = new Array();
+    mycars[0] = "Fusca";
+    mycars[1] = "Fiat 147";
+    mycars[2] = "Lada";
+    for (i in mycars) {
+        document.write(mycars[i] + "<br />");
+    }
+</script>
+<div><input type="button" onclick="gerarCores()" value="Gerar Cores"/></div>
+<div><input type="button" onclick="gerarCoresForIn()" value="Gerar Cores com FOR IN"/></div>
+</body>
+</html>

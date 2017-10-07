@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peso ideal</title>
+    <script type="text/javascript">
+        function calcularPesoIdeal() {
+            var sexo = document.calcular_peso.sexo.value;
+            var altura = document.calcular_peso.altura.value;
+            var peso = document.calcular_peso.peso.value;
+            if(sexo == "Masculino"){
+                var pesoIdeal = eval((72.7 * altura) - 58);
+                pesoIdeal = pesoIdeal.toFixed(2);
+                document.calcular_peso.resultado.value = ("Peso atual: " + peso + "  Seu peso ideal é:" + pesoIdeal);
+            }else {
+                var pesoIdeal = eval((62.1 * altura) - 44.7);
+                pesoIdeal = pesoIdeal.toFixed(2);
+                document.calcular_peso.resultado.value = ("Peso atual: " + peso + "  Seu peso ideal é:" + pesoIdeal);
+            }
+        }
+    </script>
+</head>
+<body>
+<form name="calcular_peso">
+    <input type="radio" name="sexo" value="Masculino" id="Masculino"><label for="Masculino">Masculino</label><br>
+    <input type="radio" name="sexo" value="Feminino" id="Feminino"><label for="Feminino">Feminino</label><br>
+    <p>Altura: <input type="text" name="altura" value="0" size="10"></p>
+    <p>Peso: <input type="text" name="peso" value="0" size="10"></p>
+    <p><input type="button" value="Calcular" onclick="calcularPesoIdeal()"></p>
+    <p><input type="text" name="resultado" size="40" disabled></p>
+    <p><input type="reset" name="limpar" value="Limpar"></p>
+</form>
+</body>
+</html>

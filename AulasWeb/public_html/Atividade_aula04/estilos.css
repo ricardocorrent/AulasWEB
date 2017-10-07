@@ -1,0 +1,74 @@
+body.container{
+    background-position-y: -200px;
+    background-image: url(old_rock.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.letraIngles{
+    width: 49%;
+    text-align: right;    
+    float: left;
+    font-family: sans-serif;
+}
+.letraPortugues{
+    width: 49%;
+    text-align: left;    
+    float: right;
+    font-family: serif;
+}
+.compartilhar{
+    width: 200px;
+    float: bottom;
+}
+.contato{
+    width: 300px;
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+.cabecalho-menu{
+    color: white;
+    padding: 5% 30px;
+    font-size: 30px;
+    font-family: "Courier New", monospace;
+    text-transform: uppercase;    
+}
+
+a{
+    color: white;
+}
+a:hover{
+    font-weight: bolder; 
+}
+a:visited{
+    color: #ccc;
+}
+a:link{
+    text-decoration: none;
+}
+input:focus{
+    background-color: #ccc;
+}
+/* ID */
+#email:focus{
+    background-color: #ccc;
+}
+#bandas{
+    list-style-type: none;
+}
+#bs{  
+}
+#dp{
+}
+#mt{
+}

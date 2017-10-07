@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Compra de Aquário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Compras:</legend>
+                    <table>
+                        <tr align="center">
+                            <td>Produtos</td>
+                            <td>Lista de Compras</td>
+                        </tr>
+                        <tr align="center">
+                            <td>
+                                <select>
+                                    <optgroup label="Aquários">
+                                        <option value="43">Aquário 43l</option>
+                                        <option value="84" selected>Aquário 84l</option>
+                                    </optgroup>
+                                </select>
+                                <input type="button" name="add" value="+">
+                            </td>
+                            <td rowspan="2">
+                                <textarea name="lista"></textarea>
+                            </td>
+                        </tr>
+                        <tr align="left">
+                            <td>Complementos:<br> 
+                                <input type="radio" name="com" value="molu">Movel + Luminária<br>
+                                <input type="radio" name="com" value="lu">Luminária<br>
+                                <input type="radio" name="com" value="sovidro">Só Vidro<br>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="entrega"> Entrega como Presente
+                            </td>
+                            <td>Valor Total: <input type="text" name="valor"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
